@@ -2085,3 +2085,7 @@ http.createServer((req, res) => {
 }).listen(hfPort, () => {
   console.log(`Web server running on port ${hfPort}`);
 });
+// Принудительная замена зависшего IP на динамический хост
+if (typeof settings !== 'undefined' && settings.server) {
+  settings.server.ip = "mouthbrooder.aternos.host";
+}
