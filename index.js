@@ -2077,11 +2077,11 @@ addLog(
 addLog("=".repeat(50));
 
 createBot();
-const http = require('http');
-const port = process.env.PORT || 7860;
+// Код для прохождения проверки порта на Hugging Face (без повторного объявления http)
+const hfPort = process.env.PORT || 7860;
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Minecraft Bot is Running!\n');
-}).listen(port, () => {
-  console.log(`Web server running on port ${port}`);
+}).listen(hfPort, () => {
+  console.log(`Web server running on port ${hfPort}`);
 });
