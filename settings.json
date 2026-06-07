@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "mouthbrooder.aternos.host",
+    "ip": "boa.aternos.host:38808",
     "port": 38808,
     "version": "1.21.11"
   },
