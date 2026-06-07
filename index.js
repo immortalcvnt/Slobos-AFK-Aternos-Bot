@@ -1216,7 +1216,7 @@ function createBot() {
       username: config["bot-account"].username,
       password: config["bot-account"].password || undefined,
       auth: config["bot-account"].type,
-      host: "mouthbrooder.aternos.host",
+      host: "boa.aternos.host:38808",
       port: config.server.port,
       version: botVersion,
       hideErrors: false,
